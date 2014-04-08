@@ -1,0 +1,28 @@
+
+package two.dimenstional.array.population;
+import java.util.Scanner;
+
+public class TwoDimenstionalArrayPopulation {
+
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int arr [] [] = new int [2] [3];
+        Scanner k = new Scanner(System.in);
+        for (int row = 0; row<arr.length; row++){
+            for(int element = 0; element<arr[row].length;element++){
+                System.out.println("Enter a Number: ");
+                arr[row][element] = k.nextInt();
+            }
+            
+        }
+        System.out.println("This is your two dimentional array");
+        for (int row = 0; row<arr.length; row++){
+            for(int element = 0; element<arr[row].length;element++){
+                System.out.print(arr[row][element]);
+                
+            }
+            System.out.println(" ");
+        }
+    }
+}
